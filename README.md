@@ -2,7 +2,7 @@
 
 pyBDB is a series of helper functions for using [Berkeley DB](https://en.wikipedia.org/wiki/Berkeley_DB) (BDB) in python, on top of [bsddb3](https://pypi.python.org/pypi/bsddb3), with support for secondary indices alongside basic key/value functions.
 
-Using BDB version 5.3.28 is recommened, since it is the last open license before Oracle switched to AGPL3 starting with BDB version 6.x.
+Using BDB version 5.3.28 is recommended, since it is the last open license before Oracle switched to [AGPL3](https://en.wikipedia.org/wiki/Affero_General_Public_License) starting with BDB version 6.x.
 
 # Installation
 
@@ -75,7 +75,7 @@ Using secondary indices allows for more complex queries by defining parsing func
 
 Run the [secondary_example.py](examples/secondary_example.py) file for an example of what's possible (make sure your <tt>$PYTHONPATH</tt> includes the examples folder).
 
-These examples use the [NYSE Daily TAQ](http://www.nyxdata.com/Data-Products/Daily-TAQ) data from [ftp://ftp.nyxdata.com/Historical Data Samples/Daily TAQ/](ftp://ftp.nyxdata.com/Historical%20Data%20Samples/Daily%20TAQ/) for illustration.
+These examples use the [NYSE Daily TAQ](http://www.nyxdata.com/Data-Products/Daily-TAQ) data from <a href="ftp://ftp.nyxdata.com/Historical%20Data%20Samples/Daily%20TAQ/" target="_blank">ftp://ftp.nyxdata.com/Historical Data Samples/Daily TAQ/</a> for illustration.
 
 ```python
 >>> import pyBDB
@@ -100,3 +100,10 @@ trade_keys = pyBDB.withdb('trades', lambda x, y: pyBDB.get_attribute_between(x, 
 (etc.)
 
 ```
+
+### More about secondary indices
+
+* [Using Secondary Indices and Foreign keys](http://docs.oracle.com/cd/E17277_02/html/collections/tutorial/UsingSecondaries.html) Oracle tutorial
+* [Secondary indexes](http://docs.oracle.com/cd/E17076_01/html/programmer_reference/am_second.html) Oracle programming reference
+* [How to use Berkeley DB's non-SQL, Key/Value API](https://blogs.oracle.com/berkeleydb/entry/how_to_use_berkeley_dbs_non-sq) Oracle's BDB blog
+* ["How to Use Secondary Indices for Complex Queries in Berkeley DB"](http://www.papathanasiou.org/files/BDB_Secondary_Indices.pdf) my own lighting talk slides from the [NoSQL NYC Meetup/Mini-Conference](http://www.meetup.com/nosql-nyc/) in 2009
