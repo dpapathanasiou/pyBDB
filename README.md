@@ -75,7 +75,7 @@ Using secondary indices allows for more complex queries by defining parsing func
 
 Run the [secondary_example.py](examples/secondary_example.py) file for an example of what's possible (make sure your <tt>$PYTHONPATH</tt> includes the examples folder).
 
-These examples use the [NYSE Daily TAQ](http://www.nyxdata.com/Data-Products/Daily-TAQ) data from <a href="ftp://ftp.nyxdata.com/Historical%20Data%20Samples/Daily%20TAQ/" target="_blank">ftp://ftp.nyxdata.com/Historical+Data+Samples/Daily+TAQ/</a> for illustration.
+These examples use the [NYSE Daily TAQ](http://www.nyxdata.com/Data-Products/Daily-TAQ) data from ftp://ftp.nyxdata.com/Historical%20Data%20Samples/Daily%20TAQ/ for illustration.
 
 ```python
 >>> import pyBDB
